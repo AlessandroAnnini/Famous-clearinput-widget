@@ -10,7 +10,7 @@ Usage
     // Your basic Famo.us setup
     var mainContext = Engine.createContext();
 
-    // Create the new field
+    // Create the new field and set the 'x' image with the clearImage property
     var ci = new ClearInput({
         size:[250,35],
         placeholder: 'search',
