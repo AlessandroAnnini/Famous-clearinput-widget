@@ -1,0 +1,30 @@
+Famous ClearInput Widget
+==========================
+
+This is a Famo.us Input with the possibility to add a clear button (ImageSurface) inside, on near the right border.
+
+
+Usage
+-----
+
+    // Your basic Famo.us setup
+    var mainContext = Engine.createContext();
+
+    // Create the new field
+    var ci = new ClearInput({
+        size:[250,35],
+        placeholder: 'search',
+        clearImage: 'content/images/delete-icon.png'
+    });
+    
+    // Add it to Famo.us main context
+    mainContext.add(ci);
+    
+    // Use 'inputCleared' event to know when the field has been cleared
+    ci.on('inputCleared', function() {alert('ciao');}.bind(this));
+    
+    // Use getValue() and setValue('') as normal Famo.us input
+    var ciValue = ci.getValue();
+    ci.setValue(ciValue);
+    
+    
