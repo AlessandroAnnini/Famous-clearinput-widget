@@ -29,5 +29,8 @@ Usage
 	
 	// Get Focus
 	ci.focus();
+	
+	// Set Properties
+	ci.setProperties({visibility:'hidden'});
     
     

@@ -204,6 +204,10 @@ define(function(require, exports, module) {
     ClearInput.prototype.ev = function (ev, action) {
         this._inputSurface.on(ev, action);
     };
+	
+	ClearInput.prototype.setProperties = function(obj) {
+        this._inputSurface.setProperties(obj);
+    };
 
     var defaultClearImg = '';
 
