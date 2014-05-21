@@ -165,7 +165,6 @@ define(function(require, exports, module) {
 
         this._imageSurface = new ImageSurface({
             size: [this._inputSurface.getSize()[1], this._inputSurface.getSize()[1]],
-            //content: options['clearImage'] || '<img src="' + defaultClearImg + '"/>',
             content: options['clearImage'] || '<img src="' + defaultClearImg + '"/>',
             properties: {
                 paddingRight: '4px'
