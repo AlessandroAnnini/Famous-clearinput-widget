@@ -21,10 +21,13 @@ Usage
     mainContext.add(ci);
     
     // Use 'inputCleared' event to know when the field has been cleared
-    ci.on('inputCleared', function() {alert('ciao');}.bind(this));
+    ci.ev('inputCleared', function() { /*do something*/ });
     
     // Use getValue() and setValue('') as normal Famo.us input
     var ciValue = ci.getValue();
     ci.setValue(ciValue);
+	
+	// Get Focus
+	ci.focus();
     
     
