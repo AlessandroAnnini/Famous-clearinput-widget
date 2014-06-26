@@ -29,7 +29,6 @@
  *
 * */
 
-define(function(require, exports, module) {
     var View = require('famous/core/View');
     var Surface = require('famous/core/Surface');
     var ImageSurface = require('famous/surfaces/ImageSurface');
@@ -108,5 +107,3 @@ define(function(require, exports, module) {
 
     var defaultClearImg = '';
 
-    module.exports = ClearInput;
-});
